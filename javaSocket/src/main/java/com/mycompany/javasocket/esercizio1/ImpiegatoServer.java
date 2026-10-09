@@ -34,27 +34,29 @@ public class ImpiegatoServer
         this.stipendio = stipendio;
     }
     
-    public int aumentoStipendio(int diQuanto)
+    public int aumentaStipendio(int diQuanto)
     {
         if(diQuanto > 0) stipendio += diQuanto;
         return stipendio;
     }
 
-    int aumentaStipendio(int parametro) {
-        throw new UnsupportedOperationException("Not supported yet."); // Generated from nbfs://nbhost/SystemFileSystem/Templates/Classes/Code/GeneratedMethodBody
+    public String getNome() {
+        return nome;
     }
 
-    int getStipendio() {
-        throw new UnsupportedOperationException("Not supported yet."); // Generated from nbfs://nbhost/SystemFileSystem/Templates/Classes/Code/GeneratedMethodBody
+    public String getID() {
+        return ID;
     }
 
-    Object getID() {
-        throw new UnsupportedOperationException("Not supported yet."); // Generated from nbfs://nbhost/SystemFileSystem/Templates/Classes/Code/GeneratedMethodBody
+    public int getStipendio() {
+        return stipendio;
     }
+    
+    
 
-    Object getNome() {
-        throw new UnsupportedOperationException("Not supported yet."); // Generated from nbfs://nbhost/SystemFileSystem/Templates/Classes/Code/GeneratedMethodBody
-    }
+
+
+   
     
     
     
