@@ -20,7 +20,7 @@ public class Client {
     {
         try{
             RecordRegistro r = new RecordRegistro("Rossi", null);
-            Socket socket = new Socket(args[0],7000);
+            Socket socket = new Socket("localhost",7000);
             ObjectOutputStream socket_out = new ObjectOutputStream(socket.getOutputStream());
             socket_out.writeObject(r);
             socket_out.flush();
